@@ -17,7 +17,7 @@
     "compression":"1.x",
     "cheerio":"0.x",
     "body-parser":"1.x",
-    "async":"2.x"
+    "async":"2.0.0-rc.3"
   },
   "engines": {
     "node": "0.12.7"
