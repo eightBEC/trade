@@ -41,18 +41,18 @@ app.get('/positions/short/isin/:isin',positionController.getByIsin);
 app.get('/positions/short/emitter/:emitter',positionController.getByEmitter);
 app.get('/positions/short/holder/:holder',positionController.getByHolder);
 app.get('/positions/short/date/:date',positionController.getByDate);
-//app.get('/crawl',shortController.getAllPositions);
+app.get('/crawl',shortController.getAllPositions);
 
 /**
  * Error Handler.
  */
 app.use(errorHandler());
 
-var crawlInterval = 15 * 60 * 1000;
-setInterval(function(){
-  shortController.getAllPositions();
-  console.log("executed");
-})
+// var crawlInterval = 15 * 60 * 1000;
+// setInterval(function(){
+//   shortController.getAllPositions();
+//   console.log("executed");
+// })
 
 /**
  * Start Express server.
