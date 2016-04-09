@@ -41,6 +41,7 @@ app.get('/positions/short/isin/:isin',positionController.getByIsin);
 app.get('/positions/short/emitter/:emitter',positionController.getByEmitter);
 app.get('/positions/short/holder/:holder',positionController.getByHolder);
 app.get('/positions/short/date/:date',positionController.getByDate);
+app.get('/positions/short/all',positionController.getAll);
 app.get('/crawl',shortController.getAllPositions);
 
 /**

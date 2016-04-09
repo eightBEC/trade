@@ -60,3 +60,14 @@ exports.getByHolder = function(req,res){
     });
   }
 };
+
+exports.getAll = function(req,res){
+    Position.find({},function(err,result){
+      if(err){
+        return next(err);
+      }else{
+        res.json(result);
+      }
+    });
+  }
+};
