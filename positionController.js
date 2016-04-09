@@ -1,7 +1,5 @@
 var Position = require('./position');
 
-var
-
 exports.getByIsin = function(req,res){
   if(!req.params.isin){
     return next(err);
