@@ -1,5 +1,7 @@
 var Position = require('./position');
 
+var
+
 exports.getByIsin = function(req,res){
   if(!req.params.isin){
     return next(err);
@@ -8,9 +10,8 @@ exports.getByIsin = function(req,res){
       if(err){
         return next(err);
       }else{
-        result.forEach(function(v){
-          console.log(v);
-          delete v._id});
+        result.forEach(function(v){delete v._id});
+        console.log(result);
         res.json(result);
       }
     });
