@@ -17,6 +17,7 @@ var app = express();
 
 var mongoUrl = "mongodb://"+process.env.MONGO_USER+":"+process.env.MONGO_PW+"@"+process.env.MONGO_URL;
 //
+console.log(mongoUrl);
 
 mongoose.connect(mongoUrl);
 mongoose.connection.on('error', function() {
