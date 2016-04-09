@@ -69,5 +69,4 @@ exports.getAll = function(req,res){
         res.json(result);
       }
     });
-  }
 };
