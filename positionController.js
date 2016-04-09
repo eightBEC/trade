@@ -8,6 +8,7 @@ exports.getByIsin = function(req,res){
       if(err){
         return next(err);
       }else{
+        result.forEach(function(v){ delete result._id});
         res.json(result);
       }
     });
@@ -22,6 +23,7 @@ exports.getByEmitter = function(req,res){
       if(err){
         return next(err);
       }else{
+        result.forEach(function(v){ delete result._id});
         res.json(result);
       }
     });
@@ -36,6 +38,7 @@ exports.getByDate = function(req,res){
       if(err){
         return next(err);
       }else{
+        result.forEach(function(v){ delete result._id});
         res.json(result);
       }
     });
@@ -50,6 +53,7 @@ exports.getByHolder = function(req,res){
       if(err){
         return next(err);
       }else{
+        result.forEach(function(v){ delete result._id});
         res.json(result);
       }
     });
