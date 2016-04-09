@@ -1,0 +1,25 @@
+{
+  "name": "GermanShorties",
+  "version": "0.1.0",
+  "description": "A sample Node.js app using Express 4",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "request": "2.x",
+    "morgan": "1.x",
+    "mongoose":"4.x",
+    "lusca":"1.x",
+    "fs":"0.x",
+    "express":"4.x",
+    "errorhandler":"1.x",
+    "compression":"1.x",
+    "cheerio":"0.x",
+    "body-parser":"1.x",
+    "async":"2.x"
+  },
+  "engines": {
+    "node": "0.12.7"
+  }
+}
