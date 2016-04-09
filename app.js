@@ -28,7 +28,7 @@ mongoose.connection.on('error', function() {
 /**
  * Express configuration.
  */
-app.set('port', 8080);
+app.set('port', 80);
 app.use(compress());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
