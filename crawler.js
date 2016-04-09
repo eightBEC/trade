@@ -242,7 +242,7 @@ getByHolder = function(req,res){
   }
 };
 
-exports.getAllPositions = function(req,res){
+exports.getAllPositions = function(){
   getFullShortData(function(err,result){
 
   Position.collection.drop( function(err, response) {
@@ -253,10 +253,12 @@ exports.getAllPositions = function(req,res){
     function insertCb(err,docs){
       if(err){
         console.log("Error inserting crawling results: "+err);
-        res.json({status:'err'});
+        //res.json({status:'err'});
+        return({status:'err'});
       } else {
         console.log("Successfully crawled current short position data.");
-        res.json({status:'ok'});
+        //res.json({status:'ok'});
+        return({status:'ok'});
       }
     }
   });
