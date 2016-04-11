@@ -3,6 +3,10 @@
 ### Usage
 
 The API allows to retrieve current short positions 
+  - all current positions:
+  ```
+  /positions/short/all
+  ```
   - by ISIN:
   ```
   /positions/short/isin/:isin
