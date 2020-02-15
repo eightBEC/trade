@@ -9,7 +9,7 @@
   "dependencies": {
     "request": "2.x",
     "morgan": "1.x",
-    "mongoose":"4.x",
+    "mongoose":"5.x",
     "lusca":"1.x",
     "fs":"0.x",
     "express":"4.x",
